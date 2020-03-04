@@ -4,10 +4,7 @@
 # Setup:
 ======
 
- Follow the examples below. It is possible to define values in either the
-  default variable or within the individual rss feed variables. You can define
-  values in both places, but each feeds individual settings will overwrite the
-  default ones.
+ Follow the examples below. It is possible to define values in either the default variable or within the individual rss feed variables. You can define values in both places, but each feeds individual settings will overwrite the default ones.
 
 # Values:
 =======
@@ -19,36 +16,36 @@
                             https://www.example.tld/feed.xml
                             http://username:password@www.example.tld/feed.xml
 
-  channels         List of channels the feed (and trigger) are to be active in.
+  `channels`         List of channels the feed (and trigger) are to be active in.
                     (Use space to separate multiple channels)
 
-  database         Full (or relative from your eggdrops path) path to where you
+  `database`         Full (or relative from your eggdrops path) path to where you
                     want to store the database file.
                    Example: ./scripts/feedname.db
 
-  output           The format you would like the RSS to be outputted to you
+  `output`           The format you would like the RSS to be outputted to you
                     channel in.
 
-  max-depth        Maximum amount of times the script should follow Location:
+  `max-depth`        Maximum amount of times the script should follow Location:
                     headers. Keep this relatively low.
                    Default: 5
 
-  timeout          Timeout f connections (in milliseconds).
+  `timeout`          Timeout f connections (in milliseconds).
                    Default: 60000
 
-  user-agent       User agent to send in the http request.
+  `user-agent`       User agent to send in the http request.
 
-  announce-type    How you want the announce updates to be sent to your
+  `announce-type`    How you want the announce updates to be sent to your
                     channels.
                     Options:
                      0 = Message Channel
                      1 = Notice Channel
                    Default: 0
 
-  announce-output  Maximum articles to output to channel on announce.
+  `announce-output`  Maximum articles to output to channel on announce.
                    Default: 3
 
-  trigger-type     How you want the trigger replies to be sent when triggered
+  `trigger-type`     How you want the trigger replies to be sent when triggered
                     both in channel and via private message.
                     The format is: <channel>:<privmsg>
                     Options:
@@ -58,10 +55,10 @@
                      3 = Notice User
                    Default: 0:2
 
-  trigger-output   Maximum articles to output when triggered.
+  `trigger-output`   Maximum articles to output when triggered.
                    Default: 3
 
-  update-interval  How often (in minutes) you want the feed to be checked. Try
+  `update-interval`  How often (in minutes) you want the feed to be checked. Try
                     and keep this number sensible, something above 15 minutes.
                     Some websites will ban you for hammering their feeds.
                    Default: 30
