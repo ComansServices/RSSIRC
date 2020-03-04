@@ -33,7 +33,7 @@
                     headers. Keep this relatively low.
                    Default: 5
 
-  timeout          Timeout of connections (in milliseconds).
+  timeout          Timeout f connections (in milliseconds).
                    Default: 60000
 
   user-agent       User agent to send in the http request.
