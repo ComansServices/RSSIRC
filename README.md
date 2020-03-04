@@ -65,25 +65,25 @@
 
  Optional:
  ---------
-  trigger          Public trigger to list feeds. (if you only want to define it
+  `trigger`          Public trigger to list feeds. (if you only want to define it
                     once in default use @@feedid@@, this will be replaced by
                     each individual feeds id)
 
-  evaluate-tcl     Evaluate the output before sending it to channel.
+  `evaluate-tcl`     Evaluate the output before sending it to channel.
                    Default: 0 (Off)
 
-  enable-gzip      Enable gzip decompression for this feed.
+  `enable-gzip`      Enable gzip decompression for this feed.
                    Default: 0 (Off)
 
-  remove-empty     Remove empty cookies from the output.
+  `remove-empty`     Remove empty cookies from the output.
                    Default: 1 (On)
 
-  output-order     The order you want the articles to be announced in channel.
+  `output-order`     The order you want the articles to be announced in channel.
                    Options:
                     0 = Ascending (Oldest -> Newest)
                     1 = Descending (Newest -> Oldest)
 
-  charset          This is the charset you want the feed to be outputted using.
+  `charset`          This is the charset you want the feed to be outputted using.
                     The default charset is what your local system charset is set
                     to use. In most cases, if you're having problems with output
                     just use utf-8.
@@ -97,12 +97,7 @@
   Output works on a cookie system, in this case its dynamic so it depends on
    what data the feed contains as to what you can output.
 
-  As of version 0.3 you are able to reference any tag within each article, or
-   if you really want the whole feed. The format is @@<tag>!<subtag>!...@@,
-   @@item@@ and @@entry@@ cookies are 'shortcuts' and will always point to the
-   current article. If you wish to output an attribute of a tag you can do that
-   by using the attribute name with an = in front of it
-   (eg: @@entry!link!=href@@). This would get the 'href' attribute from the
+  As of version 0.3 you are able to reference any tag within each article, or if you really want the whole feed. The format is ``@@<tag>!<subtag>!...@@,@@item@@ and @@entry@@`` cookies are 'shortcuts' and will always point to the current article. If you wish to output an attribute of a tag you can do that by using the attribute name with an = in front of it (eg: ``@@entry!link!=href@@``). This would get the 'href' attribute from the
    <link> tag. Refer to rss-synd.tcl for more examples.
 
 # Dependencies:
