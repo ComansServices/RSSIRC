@@ -14,7 +14,7 @@
 
  Required:
  ---------
-  url              The URL of the RSS/ATOM feed.
+  `url`              The URL of the RSS/ATOM feed.
                    Example: http://www.example.tld/feed.xml
                             https://www.example.tld/feed.xml
                             http://username:password@www.example.tld/feed.xml
